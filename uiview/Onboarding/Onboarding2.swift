@@ -24,6 +24,7 @@ final class Onboarding2: UIViewController {
         button.titleLabel?.font = UIFont(name: "Inter-SemiBold", size: 21)
         button.titleLabel?.textAlignment = .center
         button.setBackgroundImage(.buttonNextOnboarding, for: .normal)
+        button.setBackgroundImage(.buttonNextOnboarding, for: .highlighted)
         button.imageView?.contentMode = .scaleAspectFit
         return button
     }()
@@ -67,6 +68,7 @@ final class Onboarding2: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
         addView()
         setConstraints()
         button.addTarget(self, action: #selector(buttonDidTap), for: .touchUpInside)
@@ -131,7 +133,7 @@ final class Onboarding2: UIViewController {
 extension Onboarding2: OnboardingProtocol {
     @objc
     func buttonDidTap() {
-        let onboardingSecond = Onboarding3()
-        navigationController?.pushViewController(onboardingSecond, animated: true)
+        let nextVC = Onboarding3()
+        navigationController?.pushViewController(nextVC, animated: true)
     }
 }

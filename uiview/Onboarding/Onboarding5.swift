@@ -11,6 +11,7 @@ import UIKit
 
 final class Onboarding5: UIViewController {
     
+    
     // MARK: - UI
     private let background: UIImageView = {
         let image = UIImage(resource: .background)
@@ -21,16 +22,16 @@ final class Onboarding5: UIViewController {
     }()
     private let button: UIButton = {
         let button = UIButton()
-        button.setTitle("Next", for: .normal)
+        button.setTitle("Start to Continue      ", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont(name: "Inter-SemiBold", size: 21)
-        button.titleLabel?.textAlignment = .center
         button.setBackgroundImage(.buttonNextOnboarding, for: .normal)
+        button.setBackgroundImage(.buttonNextOnboarding, for: .highlighted)
         button.imageView?.contentMode = .scaleAspectFit
         return button
     }()
     private let imageView: UIImageView = {
-        let image = UIImage(resource: .onboardingTwoScreen)
+        let image = UIImage(resource: .phoneRecorderApp)
         let imageView = UIImageView()
         
         imageView.contentMode = .scaleAspectFit // iphone 12+
@@ -39,17 +40,17 @@ final class Onboarding5: UIViewController {
     }()
     private let titleWhite: UILabel = {
         let label = UILabel()
-        label.text = "it always nice to see any feedback of yours!\nThat’s how the app becomes better in time!"
+        label.text = "Record, listen and manage your calls \nin one place\nwith access unlimited just for 999 ₽\nper month"
         label.adjustsFontSizeToFitWidth = true
         label.textAlignment = .center
-        label.numberOfLines = 2
+        label.numberOfLines = 4
         label.textColor = .white
         label.font = UIFont(name: "Inter-Medium", size: 20)
         return label
     }()
     private let titleBlack: UILabel = {
         let label = UILabel()
-        label.text = "Our goal\nis happy user"
+        label.text = "Start to Continue\nwith access unlimited"
         label.adjustsFontSizeToFitWidth = true
         label.textAlignment = .center
         label.numberOfLines = 2
@@ -58,11 +59,19 @@ final class Onboarding5: UIViewController {
         return label
     }()
     private let containerView = UIView()
+    private let shadowView: UIImageView = {
+        let image = UIImage(resource: .shadow)
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill // iphone 12+
+        imageView.image = image
+        return imageView
+    }()
 
     // MARK: - Constructor
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
         addView()
         setConstraints()
         button.addTarget(self, action: #selector(buttonDidTap), for: .touchUpInside)
@@ -73,10 +82,11 @@ final class Onboarding5: UIViewController {
     private func addView() {
         view.addSubview(background)
         view.addSubview(imageView)
+        view.addSubview(containerView)
+        view.addSubview(shadowView)
         view.addSubview(button)
         view.addSubview(titleWhite)
         view.addSubview(titleBlack)
-        view.addSubview(containerView)
         
     }
     
@@ -117,6 +127,9 @@ final class Onboarding5: UIViewController {
             $0.edges.equalToSuperview()
             $0.width.equalToSuperview()
            //  $0.height.equalTo(896).multipliedBy(widthScreen/)
+        }
+        shadowView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
         }
     }
 

@@ -1,8 +1,17 @@
-//
-//  Factories.swift
-//  uiview
-//
-//  Created by macbook on 15.10.2023.
-//
 
-import Foundation
+import UIKit
+
+final class Factories {
+    
+    enum OnboardingView {
+        
+        enum FirstView {
+            
+            
+            
+           
+        }
+        
+    }
+    
+}
