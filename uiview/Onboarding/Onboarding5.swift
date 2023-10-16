@@ -66,6 +66,28 @@ final class Onboarding5: UIViewController {
         imageView.image = image
         return imageView
     }()
+    private let stackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.alignment = .center
+        stackView.spacing = 2
+        stackView.axis = .horizontal
+        return stackView
+    }()
+    private let termsAndService: UIButton = {
+        let button = UIButton()
+        button.setTitle("Terms of Service", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.titleLabel?.font = UIFont(name: "Inter-Medium", size: 16)
+        return button
+    }()
+    private let andPrivacyPolicy: UIButton = {
+        let button = UIButton()
+        button.setTitle("and Privacy Policy", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.titleLabel?.font = UIFont(name: "Inter-Medium", size: 16)
+        return button
+    }()
+    
 
     // MARK: - Constructor
     
@@ -87,7 +109,9 @@ final class Onboarding5: UIViewController {
         view.addSubview(button)
         view.addSubview(titleWhite)
         view.addSubview(titleBlack)
-        
+        view.addSubview(stackView)
+        stackView.addArrangedSubview(termsAndService)
+        stackView.addArrangedSubview(andPrivacyPolicy)
     }
     
     
@@ -130,6 +154,10 @@ final class Onboarding5: UIViewController {
         }
         shadowView.snp.makeConstraints {
             $0.edges.equalToSuperview()
+        }
+        stackView.snp.makeConstraints {
+            $0.top.equalTo(button.snp.bottom).inset(6)
+            $0.centerX.equalToSuperview()
         }
     }
 
