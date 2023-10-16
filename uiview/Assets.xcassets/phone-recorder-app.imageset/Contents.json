@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "phone-recorder-app.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
