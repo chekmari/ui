@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA3AB5162ADC38B4003F6142 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA3AB5152ADC38B4003F6142 /* Inter-Bold.ttf */; };
-		FA3AB51D2ADD1C23003F6142 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA3AB51C2ADD1C23003F6142 /* Inter-Medium.ttf */; };
-		FA3AB51F2ADD3244003F6142 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA3AB51E2ADD3244003F6142 /* Inter-SemiBold.ttf */; };
 		FA3AB5212ADD41A0003F6142 /* Onboarding2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3AB5202ADD41A0003F6142 /* Onboarding2.swift */; };
 		FA3AB5232ADD515F003F6142 /* Onboarding3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3AB5222ADD515F003F6142 /* Onboarding3.swift */; };
 		FA3AB5252ADD5198003F6142 /* Onboarding4.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3AB5242ADD5198003F6142 /* Onboarding4.swift */; };
 		FA3AB5272ADD51A2003F6142 /* Onboarding5.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3AB5262ADD51A2003F6142 /* Onboarding5.swift */; };
 		FA3AB5292ADD685A003F6142 /* OnboardingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3AB5282ADD685A003F6142 /* OnboardingProtocol.swift */; };
+		FA3AB52D2ADD745D003F6142 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA3AB52A2ADD745D003F6142 /* Inter-Medium.ttf */; };
+		FA3AB52E2ADD745D003F6142 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA3AB52B2ADD745D003F6142 /* Inter-SemiBold.ttf */; };
+		FA3AB52F2ADD745D003F6142 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA3AB52C2ADD745D003F6142 /* Inter-Bold.ttf */; };
 		FA5AB8E52ADC03FB000679FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AB8E42ADC03FB000679FB /* AppDelegate.swift */; };
 		FA5AB8E92ADC03FB000679FB /* Onboarding1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AB8E82ADC03FB000679FB /* Onboarding1.swift */; };
 		FA5AB8EE2ADC03FC000679FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5AB8ED2ADC03FC000679FB /* Assets.xcassets */; };
@@ -25,14 +25,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA3AB5152ADC38B4003F6142 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Bold.ttf"; path = "../../../../Downloads/Inter/static/Inter-Bold.ttf"; sourceTree = "<group>"; };
-		FA3AB51C2ADD1C23003F6142 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Medium.ttf"; path = "../../../../Downloads/Inter/static/Inter-Medium.ttf"; sourceTree = "<group>"; };
-		FA3AB51E2ADD3244003F6142 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-SemiBold.ttf"; path = "../../../../Downloads/Inter/static/Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		FA3AB5202ADD41A0003F6142 /* Onboarding2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding2.swift; sourceTree = "<group>"; };
 		FA3AB5222ADD515F003F6142 /* Onboarding3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding3.swift; sourceTree = "<group>"; };
 		FA3AB5242ADD5198003F6142 /* Onboarding4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding4.swift; sourceTree = "<group>"; };
 		FA3AB5262ADD51A2003F6142 /* Onboarding5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding5.swift; sourceTree = "<group>"; };
 		FA3AB5282ADD685A003F6142 /* OnboardingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingProtocol.swift; sourceTree = "<group>"; };
+		FA3AB52A2ADD745D003F6142 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		FA3AB52B2ADD745D003F6142 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		FA3AB52C2ADD745D003F6142 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
 		FA5AB8E12ADC03FB000679FB /* uiview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uiview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA5AB8E42ADC03FB000679FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA5AB8E82ADC03FB000679FB /* Onboarding1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding1.swift; sourceTree = "<group>"; };
@@ -71,9 +71,9 @@
 		FA3AB5142ADC3897003F6142 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				FA3AB5152ADC38B4003F6142 /* Inter-Bold.ttf */,
-				FA3AB51E2ADD3244003F6142 /* Inter-SemiBold.ttf */,
-				FA3AB51C2ADD1C23003F6142 /* Inter-Medium.ttf */,
+				FA3AB52C2ADD745D003F6142 /* Inter-Bold.ttf */,
+				FA3AB52A2ADD745D003F6142 /* Inter-Medium.ttf */,
+				FA3AB52B2ADD745D003F6142 /* Inter-SemiBold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -181,11 +181,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA3AB51D2ADD1C23003F6142 /* Inter-Medium.ttf in Resources */,
-				FA3AB5162ADC38B4003F6142 /* Inter-Bold.ttf in Resources */,
+				FA3AB52E2ADD745D003F6142 /* Inter-SemiBold.ttf in Resources */,
+				FA3AB52F2ADD745D003F6142 /* Inter-Bold.ttf in Resources */,
 				FA5AB8F12ADC03FC000679FB /* LaunchScreen.storyboard in Resources */,
-				FA3AB51F2ADD3244003F6142 /* Inter-SemiBold.ttf in Resources */,
 				FA5AB8EE2ADC03FC000679FB /* Assets.xcassets in Resources */,
+				FA3AB52D2ADD745D003F6142 /* Inter-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
